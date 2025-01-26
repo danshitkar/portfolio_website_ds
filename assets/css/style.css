@@ -1,13 +1,11 @@
 :root {
-  /**
-   * colors
-   */
-
+  /** colors */
   /* gradient */
 
   --bg-gradient-onyx: linear-gradient(
-    to bottom right,
-    hsl(240, 1%, 25%) 3%,
+    /*
+   * gradient
+   */ hsl(240, 1%, 25%) 3%,
     hsl(0, 0%, 19%) 97%
   );
   --bg-gradient-jet: linear-gradient(
@@ -53,10 +51,7 @@
   --light-gray-70: hsla(0, 0%, 84%, 0.7);
   --bittersweet-shimmer: hsl(0, 43%, 51%);
 
-  /**
-   * typography
-   */
-
+  /** typography */
   /* font-family */
   --ff-poppins: "Poppins", sans-serif;
 
@@ -76,9 +71,7 @@
   --fw-500: 500;
   --fw-600: 600;
 
-  /**
-   * shadow
-   */
+  /** shadow */
 
   --shadow-1: -4px 8px 24px hsla(0, 0%, 0%, 0.25);
   --shadow-2: 0 16px 30px hsla(0, 0%, 0%, 0.25);
@@ -86,9 +79,7 @@
   --shadow-4: 0 25px 50px hsla(0, 0%, 0%, 0.15);
   --shadow-5: 0 24px 80px hsla(0, 0%, 0%, 0.25);
 
-  /**
-   * transition
-   */
+  /** transition */
 
   --transition-1: 0.25s ease;
   --transition-2: 0.5s ease-in-out;
