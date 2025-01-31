@@ -91,3 +91,47 @@ const submitForm = (event) => {
 
 // Event listener for form submission
 contactForm.addEventListener("submit", submitForm);
+
+// Function to handle visibility of sections and images on scroll
+const handleScroll = () => {
+  const sections = document.querySelectorAll(".section");
+  const headshot = document.querySelector(".headshot");
+  const skillsCategories = document.querySelectorAll(".skills-category");
+
+  sections.forEach((section) => {
+    const sectionTop = section.getBoundingClientRect().top;
+    const sectionVisible = sectionTop < window.innerHeight - 100;
+
+    if (sectionVisible) {
+      section.classList.add("visible");
+    }
+  });
+
+  const headshotTop = headshot.getBoundingClientRect().top;
+  const headshotVisible = headshotTop < window.innerHeight - 100;
+
+  if (headshotVisible) {
+    headshot.classList.add("visible");
+  }
+
+  skillsCategories.forEach((category) => {
+    const categoryTop = category.getBoundingClientRect().top;
+    const categoryVisible = categoryTop < window.innerHeight - 100;
+
+    if (categoryVisible) {
+      category.classList.add("visible");
+    }
+  });
+};
+
+// Function to toggle the visibility of skills tags
+const toggleSkills = (element) => {
+  const skillsTags = element.nextElementSibling;
+  skillsTags.classList.toggle("visible");
+};
+
+// Event listener for scroll event
+window.addEventListener("scroll", handleScroll);
+
+// Initial call to handle visibility on page load
+handleScroll();

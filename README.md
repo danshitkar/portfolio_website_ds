@@ -46,7 +46,7 @@ Feel free to explore the projects section to see detailed information about each
 
 If you have any questions or would like to connect with me, you can reach me through the following channels:
 
-- Email: dshitkar@pdx.edu
+- Email: danshitkar@gmail.com
 - LinkedIn: [dshitkar](https://www.linkedin.com/in/dshitkar)
 
 Thank you for visiting my portfolio website!

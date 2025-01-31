@@ -72,6 +72,10 @@
     <main>
       <!-- About Section -->
       <div class="about center" id="about">
+        <!-- Headshot Image -->
+        <div class="headshot-container">
+          <img src="assets/images/IMG_1909.png" alt="Headshot of Dhananjay Shitkar" class="headshot" />
+        </div>
         <h1>Hi, I am <span class="about__name">Dhananjay Shitkar.</span></h1>
         <h2 class="about__role">Portland State University 2024.</h2>
         <p class="about__desc">
@@ -179,18 +183,170 @@
       <!-- Skills Section -->
       <section class="section skills" id="skills">
         <h2 class="section__title">Skills</h2>
-        <ul class="skills__list">
-          <li class="skills__list-item btn btn--plain">HTML5</li>
-          <li class="skills__list-item btn btn--plain">CSS3</li>
-          <li class="skills__list-item btn btn--plain">JavaScript</li>
-          <li class="skills__list-item btn btn--plain">TypeScript</li>
-          <li class="skills__list-item btn btn--plain">React</li>
-          <li class="skills__list-item btn btn--plain">Git</li>
-          <li class="skills__list-item btn btn--plain">Python</li>
-          <li class="skills__list-item btn btn--plain">Java</li>
-          <li class="skills__list-item btn btn--plain">PHP</li>
-          <li class="skills__list-item btn btn--plain">MySQL</li>
-        </ul>
+        <div class="skills-container">
+          <div class="skills-category">
+            <h4 class="skills-category-title" onclick="toggleSkills(this)">Methodology</h4>
+            <div class="skills-tags">
+              <span class="skill-tag">SDLC</span>
+              <span class="skill-tag">Waterfall</span>
+              <span class="skill-tag">Agile</span>
+            </div>
+          </div>
+
+          <div class="skills-category">
+            <h4 class="skills-category-title" onclick="toggleSkills(this)">Programming Languages</h4>
+            <div class="skills-tags">
+              <span class="skill-tag">Java</span>
+              <span class="skill-tag">C++</span>
+              <span class="skill-tag">PL/SQL</span>
+              <span class="skill-tag">Python</span>
+            </div>
+          </div>
+
+          <div class="skills-category">
+            <h4 class="skills-category-title" onclick="toggleSkills(this)">Frameworks</h4>
+            <div class="skills-tags">
+              <span class="skill-tag">Spring MVC</span>
+              <span class="skill-tag">Spring</span>
+              <span class="skill-tag">Hibernate</span>
+              <span class="skill-tag">Spring Boot</span>
+              <span class="skill-tag">Spring Security</span>
+              <span class="skill-tag">Spring Data JPA</span>
+              <span class="skill-tag">Node.js</span>
+              <span class="skill-tag">React.js</span>
+              <span class="skill-tag">Angular JS</span>
+              <span class="skill-tag">ASP.NET</span>
+              <span class="skill-tag">VB.NET</span>
+            </div>
+          </div>
+
+          <div class="skills-category">
+            <h4 class="skills-category-title" onclick="toggleSkills(this)">J2EE Technologies</h4>
+            <div class="skills-tags">
+              <span class="skill-tag">Servlets</span>
+              <span class="skill-tag">JSP</span>
+              <span class="skill-tag">JDBC</span>
+              <span class="skill-tag">JUnit</span>
+              <span class="skill-tag">JAXB</span>
+              <span class="skill-tag">JMS</span>
+              <span class="skill-tag">JSTL</span>
+              <span class="skill-tag">Multi-threading</span>
+              <span class="skill-tag">EJB</span>
+              <span class="skill-tag">JavaBeans</span>
+              <span class="skill-tag">JSF</span>
+              <span class="skill-tag">Multithreading</span>
+              <span class="skill-tag">Collections</span>
+            </div>
+          </div>
+
+          <div class="skills-category">
+            <h4 class="skills-category-title" onclick="toggleSkills(this)">IDEs</h4>
+            <div class="skills-tags">
+              <span class="skill-tag">IntelliJ IDEA</span>
+              <span class="skill-tag">Eclipse</span>
+              <span class="skill-tag">Visual Studio Code</span>
+            </div>
+          </div>
+
+          <div class="skills-category">
+            <h4 class="skills-category-title" onclick="toggleSkills(this)">Web Technologies</h4>
+            <div class="skills-tags">
+              <span class="skill-tag">HTML5</span>
+              <span class="skill-tag">CSS3</span>
+              <span class="skill-tag">JavaScript</span>
+              <span class="skill-tag">RESTful APIs</span>
+              <span class="skill-tag">GraphQL</span>
+              <span class="skill-tag">TypeScript</span>
+              <span class="skill-tag">jQuery</span>
+              <span class="skill-tag">Ajax</span>
+              <span class="skill-tag">XML</span>
+              <span class="skill-tag">JSON</span>
+              <span class="skill-tag">Bootstrap</span>
+            </div>
+          </div>
+
+          <div class="skills-category">
+            <h4 class="skills-category-title" onclick="toggleSkills(this)">DevOps</h4>
+            <div class="skills-tags">
+              <span class="skill-tag">Docker</span>
+              <span class="skill-tag">Kubernetes</span>
+              <span class="skill-tag">Jenkins</span>
+              <span class="skill-tag">Bamboo</span>
+              <span class="skill-tag">Ansible</span>
+            </div>
+          </div>
+
+          <div class="skills-category">
+            <h4 class="skills-category-title" onclick="toggleSkills(this)">Cloud Platforms</h4>
+            <div class="skills-tags">
+              <span class="skill-tag">AWS</span>
+              <span class="skill-tag">Azure</span>
+              <span class="skill-tag">Google Cloud Platform (GCP)</span>
+            </div>
+          </div>
+
+          <div class="skills-category">
+            <h4 class="skills-category-title" onclick="toggleSkills(this)">Databases</h4>
+            <div class="skills-tags">
+              <span class="skill-tag">Oracle</span>
+              <span class="skill-tag">MySQL</span>
+              <span class="skill-tag">SQL Server</span>
+              <span class="skill-tag">DB2</span>
+              <span class="skill-tag">PostgreSQL</span>
+              <span class="skill-tag">MongoDB</span>
+              <span class="skill-tag">Cassandra</span>
+              <span class="skill-tag">Cosmos DB</span>
+              <span class="skill-tag">DynamoDB</span>
+            </div>
+          </div>
+
+          <div class="skills-category">
+            <h4 class="skills-category-title" onclick="toggleSkills(this)">Version Control & Other Tools</h4>
+            <div class="skills-tags">
+              <span class="skill-tag">Git</span>
+              <span class="skill-tag">SVN</span>
+              <span class="skill-tag">Gitlab</span>
+              <span class="skill-tag">Bit Bucket</span>
+              <span class="skill-tag">Maven</span>
+              <span class="skill-tag">Gradle</span>
+              <span class="skill-tag">Ant</span>
+            </div>
+          </div>
+
+          <div class="skills-category">
+            <h4 class="skills-category-title" onclick="toggleSkills(this)">Testing and Logging Tools</h4>
+            <div class="skills-tags">
+              <span class="skill-tag">Junit</span>
+              <span class="skill-tag">Mockito</span>
+              <span class="skill-tag">Selenium</span>
+              <span class="skill-tag">TestNG</span>
+              <span class="skill-tag">Power Mock</span>
+              <span class="skill-tag">JMeter</span>
+              <span class="skill-tag">Jest</span>
+              <span class="skill-tag">Enzyme</span>
+              <span class="skill-tag">Cucumber</span>
+              <span class="skill-tag">Log4J</span>
+            </div>
+          </div>
+
+          <div class="skills-category">
+            <h4 class="skills-category-title" onclick="toggleSkills(this)">Soft Skills</h4>
+            <div class="skills-tags">
+              <span class="skill-tag">Effective verbal and written communication</span>
+              <span class="skill-tag">Problem-solving</span>
+              <span class="skill-tag">Troubleshooting skills</span>
+            </div>
+          </div>
+
+          <div class="skills-category">
+            <h4 class="skills-category-title" onclick="toggleSkills(this)">Operating Systems</h4>
+            <div class="skills-tags">
+              <span class="skill-tag">Windows</span>
+              <span class="skill-tag">Linux</span>
+              <span class="skill-tag">Unix</span>
+            </div>
+          </div>
+        </div>
       </section>
 
       <!-- Contact Section -->
@@ -212,25 +368,41 @@
           <button type="submit" class="btn btn--outline">Send Message</button>
         </form>
       </section>
-    </main>
 
-    <!-- Footer Section -->
-    <footer class="footer">
-      <a href="https://github.com/dshitkar" class="link footer__link">
-        Dhananjay Shitkar - Portfolio Website - PSU2024
-      </a>
-    </footer>
-
-    <!-- Scroll to Top Button -->
-    <div class="scroll-container">
-      <div class="scroll-top">
-        <a aria-label="Scroll up" href="#top">
-          <i aria-hidden="true" class="fas fa-arrow-up"></i>
+      <!-- Footer Section -->
+      <footer class="footer">
+        <a href="https://github.com/dshitkar" class="link footer__link">
+          Dhananjay Shitkar - Portfolio Website - PSU2024
         </a>
-      </div>
-    </div>
 
-    <!-- JavaScript -->
-    <script src="./script.js"></script>
+        <!-- Social Links -->
+        <div class="social-links">
+          <a href="https://linkedin.com/in/dshitkar" aria-label="LinkedIn" class="link link--icon">
+            <i aria-hidden="true" class="fab fa-linkedin"></i>
+          </a>
+          <a href="https://github.com/danshitkar" aria-label="GitHub" class="link link--icon">
+            <i aria-hidden="true" class="fab fa-github"></i>
+          </a>
+          <a href="https://leetcode.com/u/danshitkar/" aria-label="LeetCode" class="link link--icon">
+            <i aria-hidden="true" class="fas fa-code"></i>
+          </a>
+          <a href="https://www.instagram.com/hmmble.bee/" aria-label="Instagram" class="link link--icon">
+            <i aria-hidden="true" class="fab fa-instagram"></i>
+          </a>
+        </div>
+      </footer>
+
+      <!-- Scroll to Top Button -->
+      <div class="scroll-container">
+        <div class="scroll-top">
+          <a aria-label="Scroll up" href="#top">
+            <i aria-hidden="true" class="fas fa-arrow-up"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- JavaScript -->
+      <script src="./script.js"></script>
+    </main>
   </body>
 </html>
