@@ -19,10 +19,61 @@ body {
   font-size: 1.5em;
 }
 
-#ground {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 50px;
-  background-color: #654321; /* Brown color for the ground */
+#highScore {
+  margin-top: 10px;
+  font-size: 1.2em;
 }
+
+#leaderboard {
+  margin-top: 20px;
+  text-align: center;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}  background-color: #654321; /* Brown color for the ground */  height: 50px;  width: 100%;  bottom: 0;  position: absolute;#ground {}  text-align: center;  margin-top: 20px;#nameForm {}  margin: 5px 0;  font-size: 1em;#leaderboard li {}  padding: 0;  list-style-type: none;#leaderboard ul {}#highScore {
+  margin-top: 10px;
+  font-size: 1.2em;
+
+
+
+
+
+
+
+
+
+}  text-align: center;  margin-top: 20px;
+#nameForm {
+
+}
+  margin: 5px 0;
+  font-size: 1em;
+
+
+
+
+
+#leaderboard li {
+}  padding: 0;  list-style-type: none;#leaderboard ul {}  text-align: center;  margin-top: 20px;#leaderboard {}
